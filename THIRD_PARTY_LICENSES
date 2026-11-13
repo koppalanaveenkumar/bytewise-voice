@@ -1,0 +1,28 @@
+ByteWise Voice — Third-party licences
+======================================
+Re-check every entry before each release.
+
+AI MODELS (downloaded at runtime, not included in this repository)
+------------------------------------------------------------------
+Kokoro-82M (hexgrad) ........................ Apache-2.0
+  https://huggingface.co/hexgrad/Kokoro-82M
+Chatterbox / Chatterbox Multilingual (Resemble AI) ... MIT
+  https://github.com/resemble-ai/chatterbox
+MLX conversions (mlx-community) ............. same licence as the original model
+
+PYTHON LIBRARIES
+----------------
+fastapi ..................................... MIT
+uvicorn ..................................... BSD-3-Clause
+numpy ....................................... BSD-3-Clause
+soundfile ................................... BSD-3-Clause
+mlx ......................................... MIT
+mlx-audio ................................... MIT
+misaki ...................................... Apache-2.0
+
+NOTES
+-----
+- If the espeak-ng fallback is used for pronunciation, it is GPL-3.0
+  (compatible with AGPL-3.0).
+- Models planned for later (Orpheus, Ollama Phonon, Qwen) must be added
+  here, with their licences confirmed, before they ship.

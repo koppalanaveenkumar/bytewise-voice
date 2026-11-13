@@ -1,0 +1,42 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+
+# Tauri / Rust
+desktop/src-tauri/target/
+
+# Generated audio and user data
+output/
+*.wav
+*.mp3
+!tests/fixtures/**/*.wav
+
+# Personal voice samples: NEVER commit real people's voices
+voices/*
+!voices/.gitkeep
+
+# Secrets and local settings
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Extra venvs and build leftovers
+venv-*/
+*.egg-info/
+
+# Claude Code: personal local settings (permissions on this machine)
+.claude/settings.local.json
