@@ -27,9 +27,18 @@ CHATTERBOX_REPO = "ResembleAI/chatterbox"
 # English voices shipped with Kokoro v1.0.
 # 1st letter: a = American, b = British. 2nd letter: f = female, m = male.
 KOKORO_VOICES = [
-    "af_heart", "af_bella", "af_nicole", "af_sarah",
-    "am_adam", "am_michael", "am_puck", "am_fenrir",
-    "bf_emma", "bf_isabella", "bm_george", "bm_lewis",
+    "af_heart",
+    "af_bella",
+    "af_nicole",
+    "af_sarah",
+    "am_adam",
+    "am_michael",
+    "am_puck",
+    "am_fenrir",
+    "bf_emma",
+    "bf_isabella",
+    "bm_george",
+    "bm_lewis",
 ]
 
 
@@ -77,13 +86,23 @@ class TorchBackend:
 
     def models(self) -> list[ModelInfo]:
         models = [
-            ModelInfo(key="kokoro", label="Kokoro (fast)", backend=self.name,
-                      supports_cloning=False, installed=_is_downloaded(KOKORO_REPO)),
+            ModelInfo(
+                key="kokoro",
+                label="Kokoro (fast)",
+                backend=self.name,
+                supports_cloning=False,
+                installed=_is_downloaded(KOKORO_REPO),
+            ),
         ]
         if _has_package("chatterbox"):
             models.append(
-                ModelInfo(key="chatterbox", label="Chatterbox (voice cloning)", backend=self.name,
-                          supports_cloning=True, installed=_is_downloaded(CHATTERBOX_REPO))
+                ModelInfo(
+                    key="chatterbox",
+                    label="Chatterbox (voice cloning)",
+                    backend=self.name,
+                    supports_cloning=True,
+                    installed=_is_downloaded(CHATTERBOX_REPO),
+                )
             )
         return models
 

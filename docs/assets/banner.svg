@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-label="ByteWise Voice: private, unlimited AI voice studio">
+  <style>
+    /* Waveform "speaks": each bar breathes, with a delay that travels left to right */
+    .bar {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: speak 1.8s ease-in-out infinite;
+    }
+    @keyframes speak {
+      0%, 100% { transform: scaleY(1); }
+      50% { transform: scaleY(0.3); }
+    }
+    /* Soft pulse on the glow behind the waveform */
+    .glow { animation: glow 3.6s ease-in-out infinite; }
+    @keyframes glow {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.55; }
+    }
+    /* Respect people who turn off animations in their system settings */
+    @media (prefers-reduced-motion: reduce) {
+      .bar, .glow { animation: none; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#1A1440"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2DD4BF"/>
+      <stop offset="0.5" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="waveText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="glowFill" cx="0.5" cy="0.8" r="0.6">
+      <stop offset="0" stop-color="#60A5FA" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="400" rx="24" fill="url(#bg)"/>
+  <rect class="glow" width="1280" height="400" rx="24" fill="url(#glowFill)"/>
+
+  <text x="640" y="150" text-anchor="middle"
+        font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="76" font-weight="800" fill="#F8FAFC" letter-spacing="-1.5">ByteWise <tspan fill="url(#waveText)">Voice</tspan></text>
+  <text x="640" y="206" text-anchor="middle"
+        font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="500" fill="#A5B4CF">Private, unlimited AI voice studio on your own Mac or PC</text>
+
+  <g fill="url(#wave)">
+    <rect class="bar" style="animation-delay:-0.00s" x="196" y="313.6" width="8" height="8.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.71s" x="212" y="311.8" width="8" height="12.3" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.62s" x="228" y="309.6" width="8" height="16.8" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.53s" x="244" y="307.9" width="8" height="20.2" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.44s" x="260" y="307.5" width="8" height="21.1" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.35s" x="276" y="308.1" width="8" height="19.8" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.26s" x="292" y="308.1" width="8" height="19.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.17s" x="308" y="307.1" width="8" height="21.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.08s" x="324" y="305.9" width="8" height="24.3" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.99s" x="340" y="303.0" width="8" height="30.0" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.90s" x="356" y="301.4" width="8" height="33.1" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.81s" x="372" y="302.7" width="8" height="30.5" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.72s" x="388" y="300.7" width="8" height="34.6" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.63s" x="404" y="293.9" width="8" height="48.1" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.54s" x="420" y="289.0" width="8" height="58.0" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.45s" x="436" y="288.4" width="8" height="59.2" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.36s" x="452" y="292.6" width="8" height="50.7" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.27s" x="468" y="299.8" width="8" height="36.4" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.18s" x="484" y="294.3" width="8" height="47.3" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.09s" x="500" y="290.3" width="8" height="55.3" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.00s" x="516" y="291.0" width="8" height="54.0" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.71s" x="532" y="294.7" width="8" height="46.5" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.62s" x="548" y="298.2" width="8" height="39.5" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.53s" x="564" y="298.6" width="8" height="38.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.44s" x="580" y="295.0" width="8" height="46.1" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.35s" x="596" y="289.4" width="8" height="57.3" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.26s" x="612" y="285.4" width="8" height="65.1" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.17s" x="628" y="286.4" width="8" height="63.3" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.08s" x="644" y="292.9" width="8" height="50.2" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.99s" x="660" y="293.8" width="8" height="48.4" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.90s" x="676" y="284.8" width="8" height="66.3" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.81s" x="692" y="280.6" width="8" height="74.7" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.72s" x="708" y="282.7" width="8" height="70.6" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.63s" x="724" y="289.6" width="8" height="56.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.54s" x="740" y="297.5" width="8" height="40.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.45s" x="756" y="296.3" width="8" height="43.4" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.36s" x="772" y="296.0" width="8" height="44.1" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.27s" x="788" y="299.0" width="8" height="37.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.18s" x="804" y="299.1" width="8" height="37.8" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.09s" x="820" y="298.8" width="8" height="38.4" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.00s" x="836" y="301.9" width="8" height="32.2" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.71s" x="852" y="297.5" width="8" height="41.1" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.62s" x="868" y="293.4" width="8" height="49.1" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.53s" x="884" y="292.4" width="8" height="51.2" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.44s" x="900" y="295.4" width="8" height="45.2" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.35s" x="916" y="301.3" width="8" height="33.5" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.26s" x="932" y="304.4" width="8" height="27.2" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.17s" x="948" y="301.5" width="8" height="32.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-1.08s" x="964" y="301.6" width="8" height="32.8" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.99s" x="980" y="304.1" width="8" height="27.9" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.90s" x="996" y="307.3" width="8" height="21.5" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.81s" x="1012" y="309.8" width="8" height="16.5" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.72s" x="1028" y="310.8" width="8" height="14.3" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.63s" x="1044" y="311.5" width="8" height="13.0" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.54s" x="1060" y="312.1" width="8" height="11.7" rx="4"/>
+    <rect class="bar" style="animation-delay:-0.45s" x="1076" y="313.3" width="8" height="9.4" rx="4"/>
+  </g>
+</svg>
