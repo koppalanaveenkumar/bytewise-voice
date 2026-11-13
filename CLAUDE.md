@@ -11,6 +11,8 @@ Open-source, private, unlimited AI voice studio for Mac and Windows, built on fr
 - Shell: **Git Bash on Windows**, **zsh on Mac**. Match the commands to the machine.
 - Plain, simple language. Short steps and tables.
 - After each result, update the Benchmark log (DEVELOPMENT_PLAN.md §10) and tick off tasks.
+- **All Python code you hand over must already be ruff-formatted** (line length 100, see `pyproject.toml`). CI runs `ruff format --check` and fails otherwise.
+- Keep [docs/HANDOFF.md](docs/HANDOFF.md) current at the end of each session (status, problems solved, next steps), so work can move between the Windows PC and the Mac.
 
 ## Key technical facts
 

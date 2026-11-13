@@ -40,7 +40,8 @@ ByteWise Voice is an **open-source, private, unlimited AI voice studio** (simila
 - [x] Old prototype (Gradio `app.py`, `static/`, old `app/`) deleted. Starting fresh
 - [x] Docs: README, CONTRIBUTING, THIRD_PARTY_LICENSES, LICENSE (AGPL-3.0)
 - [x] `git init` (branch `main`)
-- [ ] **First commit + private GitHub repo** (see section 8)
+- [x] First commit + private GitHub repo: https://github.com/koppalanaveenkumar/bytewise-voice (branch `main`)
+- [x] New README with badges, feature status, quick start, Mermaid diagram, and an **animated SVG banner** (`docs/assets/banner.svg`, respects reduced motion)
 - [ ] Own voice recording (currently using a test clip, see 6.7)
 - [ ] Demo clips, landing page, mockups, creator interviews (business/design track, not started)
 
@@ -55,7 +56,9 @@ ByteWise Voice is an **open-source, private, unlimited AI voice studio** (simila
 - ⬜ `mlx_backend.py` for Apple Silicon (**next task on the Mac**, see section 7)
 - ⬜ `scripts/benchmark.py` (B1.11)
 
-**Batch 3: React app.** Not started: F1.1–F1.6, D1.1 (`scripts/dev.py`), D1.3 (pre-commit).
+**D1.3 (pre-commit with ruff):** ✅ done and committed (`.pre-commit-config.yaml`, ruff-pre-commit `v0.17.5`, hooks `ruff-check --fix` + `ruff-format`). On each new machine, run `pre-commit install` once.
+
+**Batch 3: React app.** Not started: F1.1–F1.6, D1.1 (`scripts/dev.py`).
 **Spike S1.2** (PyInstaller packaging test): not started.
 
 ## 5. Code that exists now
@@ -90,6 +93,7 @@ tests/                     conftest (fake engine + temp data dir), test_api, tes
 5. **Drive C: on the Windows PC filled up.** The Hugging Face model cache was moved to `E:\hf-cache` (`setx HF_HOME 'E:\hf-cache'` + `export HF_HOME="E:/hf-cache"` in `~/.bashrc`). VS Code terminals only see new env vars after VS Code is fully restarted. This led to a planned feature: **model storage location** in Settings (task B4.1).
 6. **Git Bash path gotcha.** `pip freeze > output\file.txt` created a file named `outputfile.txt`. In Git Bash, always use forward slashes.
 7. **Test voice.** For local testing only, the voice sample is an ElevenLabs clip ("Marcus", a Professional Voice Clone of a real person) converted to `voices/myvoice.wav` (32.8 s; Chatterbox uses about the first 10 s). **Never commit it, never use it in demos or on the landing page, and replace it with the founder's own recording before beta.** Files in `voices/` are git-ignored.
+8. **CI failed on `ruff format --check`.** Code handed over in Batch 2 wasn't in ruff's formatting (lint itself passed). Fixed with `ruff format .`. **Rule from now on:** all code Claude gives must already be ruff-formatted (line length 100), and pre-commit catches anything missed.
 
 ## 7. Next steps on the Mac
 
